@@ -3,4 +3,33 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: sans-serif, 'Courier New', Courier, monospace;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.textpricipal {
+    color: rgb(218, 158, 48);
+}
+
+.corpprimary {
+    display: flex;
+    background-color: rgb(34, 84, 247);
+    align-items: center;
+    justify-content: center;
+    height: 5.75rem;
+    width: 100%;
+    padding: 1%;
+}
+
+.img1 {
+    padding-right: 1%;
+    align-items: flex-start;
+    width: 88px;
+    justify-content: right;
+
 }

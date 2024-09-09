@@ -1,16 +1,17 @@
 /* Created by Tivotal */
+
 /* Google Fonts(Poppins) */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
 * {
-  list-style: none;
+    list-style: none;
   margin: 0;
   box-sizing: border-box;
 }
-
 .carrinho {
   min-height: 100vh;
   padding: 0 35px;
-  margin-top: 20px;
+  margin-top:20px ;
   width: 78%;
   display: flex;
   align-items: center;
@@ -27,10 +28,12 @@
   justify-self: center;
 }
 
+
+
 .wrapper .carousel {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc(33.3333333333% - 12px);
+  grid-auto-columns: calc((100% / 3) - 12px);
   gap: 16px;
   border-radius: 8px;
   overflow-x: auto;
@@ -65,9 +68,7 @@
 }
 
 .wrapper .carousel.dragging .card {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   cursor: grab;
 }
 
@@ -83,8 +84,7 @@
 .wrapper .carousel .card .img img {
   height: 133px;
   width: 233px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   border-radius: 14px;
 }
 
@@ -101,45 +101,12 @@
 
 @media (max-width: 900px) {
   .wrapper .carousel {
-    grid-auto-columns: calc(100% - 9px);
+    grid-auto-columns: calc((100% / 1) - 9px);
   }
 }
+
 @media (max-width: 600px) {
   .wrapper .carousel {
     grid-auto-columns: 100%;
   }
 }
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-family: sans-serif, "Courier New", Courier, monospace;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.textpricipal {
-  color: rgb(218, 158, 48);
-}
-
-.corpprimary {
-  display: flex;
-  background-color: rgb(34, 84, 247);
-  align-items: center;
-  justify-content: center;
-  height: 5.75rem;
-  width: 100%;
-  padding: 1%;
-}
-
-.img1 {
-  padding-right: 1%;
-  align-items: flex-start;
-  width: 88px;
-  justify-content: right;
-}/*# sourceMappingURL=styles.css.map */

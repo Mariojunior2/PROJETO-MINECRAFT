@@ -1,4 +1,4 @@
-/*Ele faz o main funcionar*/
+/*Ele faz o carrinho funcionar*/
 let carousel = document.querySelector(".carousel");
 let btns = document.querySelectorAll(".wrapper i");
 let carouselChildren = [...carousel.children];

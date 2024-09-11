@@ -64,7 +64,7 @@ let infiniteScroll = () => {
     //caso contrario, o carrossel esta no fim, deslocar para o cursor de inicio
   if (carousel.scrollLeft === 0) {
     carousel.classList.add("no-transition");
-    carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
+    carousel.scrollLeft = carousel.scrollWidth - 1 * carousel.offsetWidth;
     carousel.classList.remove("no-transition");
   } else if (
     Math.ceil(carousel.scrollLeft) ===
@@ -77,11 +77,10 @@ let infiniteScroll = () => {
 
    //limpar o tempo limite e iniciar a reproducao automatica se o mouse n estiver sobre o carrossel
   clearTimeout(timeoutId);
-  if (!wrapper.matches(":hover")) autoPlay();
+
 };
 
 carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 

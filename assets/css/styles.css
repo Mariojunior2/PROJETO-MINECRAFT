@@ -8,29 +8,60 @@
 }
 
 .carrinho {
-  min-height: 100vh;
+  margin-top: 1px;
+  min-height: 40vh;
   padding: 0 35px;
-  margin-top: 20px;
-  width: 78%;
+  width: 7%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(14, 101, 201);
+  background: rgba(255, 255, 255, 0);
   border-radius: 16px;
 }
 
 .wrapper {
-  max-width: 1100px;
+  max-width: 1400px;
   width: 100%;
   position: absolute;
   display: flex;
   justify-self: center;
 }
 
+.wrapper i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.23rem;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  line-height: 50px;
+  text-align: center;
+  transition: 0.3s ease;
+  color: rgb(255, 255, 255);
+}
+
+.fa-angle-left {
+  margin-right: 10px;
+}
+
+.wrapper i:first-child {
+  left: -22px;
+}
+
+.wrapper i:last-child {
+  right: -22px;
+}
+
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+
 .wrapper .carousel {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc(33.3333333333% - 12px);
+  grid-auto-columns: calc(33.3333333333% - 2px);
   gap: 16px;
   border-radius: 8px;
   overflow-x: auto;
@@ -55,8 +86,8 @@
 .wrapper .carousel .card {
   scroll-snap-align: start;
   height: 342px;
-  background: #fff;
-  border-radius: 8px;
+  background: #000000;
+  border-radius: 20px;
   padding-bottom: 15px;
   display: flex;
   align-items: center;
@@ -71,13 +102,100 @@
   cursor: grab;
 }
 
-.wrapper .carousel .card .img {
-  height: 200px;
+.wrapper .carousel .card .img_one {
+  height: 275px;
   width: 275px;
-  border-radius: 15px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Minecraft-creeper-face.jpg/800px-Minecraft-creeper-face.jpg);
+}
+
+.wrapper .carousel .card .img_two {
+  height: 275px;
+  width: 275px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url();
+}
+
+.wrapper .carousel .card .img_doismaisum {
+  height: 275px;
+  width: 275px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url();
+}
+
+.wrapper .carousel .card .img_four {
+  height: 275px;
+  width: 275px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url();
+}
+
+.wrapper .carousel .card .img_five {
+  height: 275px;
+  width: 275px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url();
+}
+
+.wrapper .carousel .card .img_six {
+  height: 275px;
+  width: 275px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url();
+}
+
+.wrapper .carousel .card .img_seven {
+  height: 275px;
+  width: 275px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url();
+}
+
+.wrapper .carousel .card .img_eight {
+  height: 275px;
+  width: 275px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url();
 }
 
 .wrapper .carousel .card .img img {
@@ -101,9 +219,17 @@
 
 @media (max-width: 900px) {
   .wrapper .carousel {
-    grid-auto-columns: calc(100% - 9px);
+    grid-auto-columns: calc(50% - 9px);
   }
 }
+#right {
+  margin-left: -10px;
+}
+
+#left {
+  margin-left: -14px;
+}
+
 @media (max-width: 600px) {
   .wrapper .carousel {
     grid-auto-columns: 100%;
@@ -115,6 +241,7 @@ body {
   justify-content: center;
   flex-direction: column;
   font-family: sans-serif, "Courier New", Courier, monospace;
+  background-color: rgb(74, 106, 212);
 }
 
 header {
@@ -135,6 +262,7 @@ header {
   height: 5.75rem;
   width: 100%;
   padding: 1%;
+  border: 3px solid rgb(235, 165, 15);
 }
 
 .img1 {
@@ -142,4 +270,42 @@ header {
   align-items: flex-start;
   width: 88px;
   justify-content: right;
+}
+
+h1, h2, h3, p {
+  color: rgb(235, 165, 15);
+}
+
+#conteudoone {
+  display: box;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(3, 51, 209);
+  border: 5px solid rgb(235, 165, 15);
+  width: 75%;
+  height: 750px;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  border-radius: 2%;
+}
+
+.tituloone {
+  text-align: center;
+  font-size: 90px;
+}
+
+.h2inicial {
+  margin-top: 30px;
+  margin-left: 23%;
+}
+
+.textoone {
+  text-align: right;
+  padding: 5%;
+}
+
+#imagem1 {
+  margin-top: -150px;
+  margin-left: 19%;
 }/*# sourceMappingURL=styles.css.map */
